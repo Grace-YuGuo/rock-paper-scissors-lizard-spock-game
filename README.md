@@ -154,8 +154,4 @@ The live link can be found here - https://xxx.html
 - The fonts used were imported from [Google Fonts](https://fonts.google.com/)
 
 - Images were sourced from www.freepik.com, and taken from the following web pages:
-	- https://www.freepik.com/free-photo/black-white-vehicles-yellow-caution-tape-near-car-parking-lot-daytime-crime-scene_9818237.htm#fromView=search&page=1&position=34&uuid=69e5363c-95dc-4b74-96a1-cda464b3fd90
-	- https://www.freepik.com/free-vector/crime-scene-with-tape-concept-illustration_37573771.htm#fromView=search&page=1&position=7&uuid=f659683b-489f-444b-8ce9-267a93dde8c1
-	- https://www.freepik.com/free-photo/wedding-bouquet-rocks_3402602.htm#fromView=search&page=1&position=0&uuid=c9b5bc51-2d3c-4268-9e6b-5040e2925bb5
-	- https://www.freepik.com/free-ai-image/diverse-people-addicted-their-smart-devices-scrolling-through-looking-into-their-screens_186027476.htm#fromView=search&page=1&position=17&uuid=8515378b-b6bf-4255-95f5-2a4a3e313bdc
-	- https://www.freepik.com/free-photo/top-view-blue-monday-concept-composition-with-telephone_19534931.htm
+	- https://www.freepik.com/icon/rock-paper-scissors_683187
