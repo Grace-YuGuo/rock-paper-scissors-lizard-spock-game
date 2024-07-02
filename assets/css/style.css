@@ -90,6 +90,14 @@ hr {
     padding: 2rem;
 }
 
+/* add effects when hovering on the buttons */
+.start-game-buttons button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #D93312;
+    border: 2px solid #d93312;
+}
+
 
 /**MAIN GAME SCREEN STYLES*/
 
@@ -140,6 +148,64 @@ hr {
     width: 40px;
     height: 40px;
 }
+
+/* add effects for hovering on the five options */
+#rockOption {
+    border-color: #53cf8d;
+}
+
+#rockOption:hover {
+    cursor: pointer;
+    border-color: #575757;
+    background-color: #53cf8d;
+
+}
+
+#paperOption {
+    border-color: #3ce0ee;
+}
+
+#paperOption:hover {
+    cursor: pointer;
+    border-color: #575757;
+    background-color: #3ce0ee;
+
+}
+
+#scissorsOption {
+    border-color: #cc48ad;
+}
+
+#scissorsOption:hover {
+    cursor: pointer;
+    border-color: #575757;
+    background-color: #cc48ad;
+
+}
+
+#lizardOption {
+    border-color: #d5e03d;
+}
+
+#lizardOption:hover {
+    cursor: pointer;
+    border-color: #575757;
+    background-color: #d5e03d;
+
+}
+
+#spockOption {
+    border-color: #e99e1c;
+}
+
+#spockOption:hover {
+    cursor: pointer;
+    border-color: #575757;
+    background-color: #e99e1c;
+
+}
+
+
 
 /* media query for screen size min-width 768px */
 @media screen and (min-width:768px) {
