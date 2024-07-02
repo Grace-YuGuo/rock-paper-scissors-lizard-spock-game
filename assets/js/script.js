@@ -7,7 +7,7 @@ const mainGameContainer = document.getElementsByClassName('main-game-container')
 const gameOptions = document.getElementById('game-options')
 const optionTextAndSVG = document.querySelectorAll('.option-container p, .option-container path')
 const allOptions = document.getElementsByClassName('option-container')
-const availableChoices = ['rockOption', 'paperOption', 'scissorsOption', 'lizardOption', 'spockOption']
+const availableChoices = ['Rock', 'Paper', 'Scissors', 'Lizard', 'Spock']
 
 const roundEndScreen = document.getElementById('round-end-screen')
 const roundEndPlayer1 = document.getElementById('player-one-chose')
@@ -124,8 +124,8 @@ function winnerThisRound(playerOneChoice, otherPlayerChoice){
         return result
     }
     switch (playerOneChoice){
-        case 'rockOption':
-            if(otherPlayerChoice === 'paperOption' || otherPlayerChoice === 'spockOption'){
+        case 'Rock':
+            if(otherPlayerChoice === 'Paper' || otherPlayerChoice === 'Spock'){
                 result = 'other player'
                 otherPlayerPoints++
             }
@@ -134,8 +134,8 @@ function winnerThisRound(playerOneChoice, otherPlayerChoice){
                 playerOnePoints++
             }
             break;
-        case 'paperOption':
-            if(otherPlayerChoice === 'scissorsOption' || otherPlayerChoice === 'lizardOption'){
+        case 'Paper':
+            if(otherPlayerChoice === 'Scissors' || otherPlayerChoice === 'Lizard'){
                 result = 'other player'
                 otherPlayerPoints++
             }
@@ -144,8 +144,8 @@ function winnerThisRound(playerOneChoice, otherPlayerChoice){
                 playerOnePoints++
             }
             break;
-            case 'scissorsOption':
-                if(otherPlayerChoice === 'rockOption' || otherPlayerChoice === 'spockOption'){
+            case 'Scissors':
+                if(otherPlayerChoice === 'Rock' || otherPlayerChoice === 'Spock'){
                     result = 'other player'
                     otherPlayerPoints++
                 }
@@ -154,8 +154,8 @@ function winnerThisRound(playerOneChoice, otherPlayerChoice){
                     playerOnePoints++
                 }
             break;
-            case 'lizardOption':
-                if(otherPlayerChoice === 'paperOption' || otherPlayerChoice === 'spockOption'){
+            case 'Lizard':
+                if(otherPlayerChoice === 'Paper' || otherPlayerChoice === 'Spock'){
                     result = 'other player'
                     otherPlayerPoints++
                 }
@@ -164,8 +164,8 @@ function winnerThisRound(playerOneChoice, otherPlayerChoice){
                     playerOnePoints++
                 }
             break;
-            case 'spockOption':
-                if(otherPlayerChoice === 'paperOption' || otherPlayerChoice === 'lizardOption'){
+            case 'Spock':
+                if(otherPlayerChoice === 'Paper' || otherPlayerChoice === 'Lizard'){
                     result = 'other player'
                     otherPlayerPoints++
                 }
