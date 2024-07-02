@@ -24,6 +24,15 @@ hr {
     background-color: #D93312;
 }
 
+/* add for startbutton or playarea to display and hidden */
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
 
 /** STYLING RULE SECTION*/
 
@@ -93,9 +102,12 @@ hr {
 /* add effects when hovering on the buttons */
 .start-game-buttons button:hover {
     cursor: pointer;
-    background-color: white;
-    color: #D93312;
     border: 2px solid #d93312;
+    border-radius: 15%;
+    box-shadow: 0 8px 12px coral;
+    background: linear-gradient(135deg, coral, tomato);
+    color:white;
+    font-weight: 600;
 }
 
 
@@ -158,7 +170,7 @@ hr {
     cursor: pointer;
     border-color: #575757;
     background-color: #53cf8d;
-
+    box-shadow: 0 8px 12px #53cf8d;
 }
 
 #paperOption {
@@ -169,7 +181,7 @@ hr {
     cursor: pointer;
     border-color: #575757;
     background-color: #3ce0ee;
-
+    box-shadow: 0 8px 12px #3ce0ee;
 }
 
 #scissorsOption {
@@ -180,7 +192,7 @@ hr {
     cursor: pointer;
     border-color: #575757;
     background-color: #cc48ad;
-
+    box-shadow: 0 8px 12px #cc48ad;
 }
 
 #lizardOption {
@@ -191,7 +203,7 @@ hr {
     cursor: pointer;
     border-color: #575757;
     background-color: #d5e03d;
-
+    box-shadow: 0 8px 12px #d5e03d;
 }
 
 #spockOption {
@@ -202,7 +214,7 @@ hr {
     cursor: pointer;
     border-color: #575757;
     background-color: #e99e1c;
-
+    box-shadow: 0 8px 12px #e99e1c;
 }
 
 
