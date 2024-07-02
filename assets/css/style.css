@@ -245,6 +245,30 @@ hr {
     box-shadow: 0 8px 12px #e99e1c;
 }
 
+/* STYLES FOR END OF ROUND SCREEN */
+
+.announcement-screen h3{
+    color:#D93312;
+}
+
+.announce-round-winner{
+display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.announce-round-winner button{
+    background-color: #D93312;
+    color: white;
+    font-family: 'Keania One', sans-serif;
+    font-size: 1.5rem;
+    border-radius: 12px;
+    border:none;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+
 
 
 /* media query for screen size min-width 768px */
