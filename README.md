@@ -77,16 +77,21 @@ Rock, Paper,Scissors, Lizard, Spock Game is a website for users want to play an 
     ![Font Pairing](documentation/font-family/font-pair.png)   
 
 -   ### Logo/Icon
-    - The logo design incorporates a shield and binoculars. The shield because Prevent seeks to protect, and binoculars because Prevent needs to look closely to spot signs of radicalisation. The logo was generated using [bing copilot designer](https://www.bing.com/chat?q=Microsoft+Copilot&FORM=hpcodx)
+    - The logo design incorporates the rock paper and scissors in a round.  The logo was generated using [favicon-converter](https://favicon.io/favicon-converter/)
  
 	![Logo](assets/favicon/android-chrome-192x192.png)
 
 -   ### Wireframes
 
-    -   ####  Wireframes
+    -   ####  Wireframe1
 
-        ![Mobile wireframes](documentation/wireframes/xx.png)
+        ![Mobile wireframes1](assets/documentation/wireframes/wireframe1.png)
+    -   ####  Wireframe2
 
+        ![Mobile wireframes2](assets/documentation/wireframes/wireframe2.png)
+    -   ####  Wireframe3
+    
+        ![Tablet/laptop wireframes1](assets/documentation/wireframes/wireframe2.png)
    
 
 ## Technologies Used
@@ -157,3 +162,6 @@ The live link can be found here - https://xxx.html
 
 - Images were sourced from www.freepik.com, and taken from the following web pages:
 	- https://www.freepik.com/icon/rock-paper-scissors_683187
+
+
+[def]: assets/documentation/wireframes/wireframe3.png
