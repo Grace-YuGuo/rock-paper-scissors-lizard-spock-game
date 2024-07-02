@@ -1,14 +1,15 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
-    background:linear-gradient(rgba(94, 168, 193, 0.1), #8CB9C5);
+body {
+    background: linear-gradient(rgba(94, 168, 193, 0.1), #8CB9C5);
     background-repeat: no-repeat;
     min-height: 100vh;
 }
 
-h1, h2{
+h1,
+h2 {
     font-family: 'Keania One', sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -16,7 +17,7 @@ h1, h2{
     text-align: center;
 }
 
-hr{
+hr {
     height: 2px;
     border-top: 1px solid #D93312;
     color: #D93312;
@@ -27,59 +28,60 @@ hr{
 /** STYLING RULE SECTION*/
 
 /*combine with game container rule? finalize padding and decide*/
-.rules{
+.rules {
     border-radius: 12px;
     background-color: white;
     padding: 12px;
     border: 4px solid #D93312;
 }
 
-.rule-dropdown{
+.rule-dropdown {
     padding: 8px 16px;
 }
 
-.rule{
+.rule {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 1rem;
 }
 
-.rule p{
-    margin:0;
+.rule p {
+    margin: 0;
 }
 
-.rule svg, .rule svg path{
+.rule svg,
+.rule svg path {
     width: 40px;
     height: 40px;
 }
 
-.rule .option-name{
+.rule .option-name {
     font-weight: bold;
     margin-left: 0.5rem;
 }
 
-.name-and-icon{
+.name-and-icon {
     display: flex;
     align-items: center;
     /* flex-grow: 1; */
     width: 7rem;
 }
 
-.win-lose{
+.win-lose {
     flex-grow: 1;
 }
 
 
 /** BUTTON STYLES */
 
-.start-game-buttons{
+.start-game-buttons {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 4rem 0;
 }
 
-.start-game-buttons button{
+.start-game-buttons button {
     font-family: 'Keania One', sans-serif;
     background-color: #D93312;
     color: white;
@@ -91,15 +93,15 @@ hr{
 
 /**MAIN GAME SCREEN STYLES*/
 
-.main-game-container{
+.main-game-container {
     border-radius: 12px;
     background-color: white;
     padding: 12px;
     border: 4px solid #D93312;
 }
 
-.main-game-container h3{
-    color:#575757;
+.main-game-container h3 {
+    color: #575757;
     font-family: 'Keania One', sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -107,34 +109,75 @@ hr{
     margin: 0;
 }
 
-.game-info-row{
+.game-info-row {
     display: flex;
     justify-content: space-between;
 }
 
-.game-options{
+.game-options {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap:0.75rem;
+    gap: 0.75rem;
 }
 
-.option-container{
+.option-container {
     border-radius: 12px;
-    border:4px solid grey;
+    border: 4px solid grey;
     width: 7rem;
     padding: 1.25rem;
     text-align: center;
 
 }
 
-.option-container p{
+.option-container p {
     font-size: 1rem;
     font-weight: bold;
     margin: 0;
 }
 
-.option-container svg{
+.option-container svg {
     width: 40px;
     height: 40px;
+}
+
+/* media query for screen size min-width 768px */
+@media screen and (min-width:768px) {
+    .win-lose {
+        display: flex;
+        flex-direction: row;
+        gap: 10%;
+    }
+
+    .start-game-buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 30%;
+    }
+
+    .game-options {
+        display: flex;
+        gap: 5%;
+    }
+
+}
+
+/* media query for screen size min-width 992px  */
+@media screen and (min-width:992px) {
+    .win-lose {
+        gap: 30%;
+    }
+
+    .game-info-row {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .game-options {
+        display: flex;
+        gap: 8%;
+    }
+
 }
