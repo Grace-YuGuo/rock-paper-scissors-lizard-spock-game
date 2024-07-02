@@ -49,6 +49,19 @@ hr{
     width: 450px;
 }
 
+.rule-dropdown p{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.rule-dropdown p:hover {background-color: #f1f1f1}
+  
+.rules:hover .rule-dropdown {
+  display: block;
+}
+
 .rule{
     display: flex;
     justify-content: space-around;
