@@ -190,55 +190,55 @@ hr {
 }
 
 /* add effects for hovering on the five options */
-#rockOption {
+#Rock {
     border-color: #53cf8d;
 }
 
-#rockOption:hover {
+#Rock:hover {
     cursor: pointer;
     border-color: #575757;
     background-color: #53cf8d;
     box-shadow: 0 8px 12px #53cf8d;
 }
 
-#paperOption {
+#Paper {
     border-color: #3ce0ee;
 }
 
-#paperOption:hover {
+#Paper:hover {
     cursor: pointer;
     border-color: #575757;
     background-color: #3ce0ee;
     box-shadow: 0 8px 12px #3ce0ee;
 }
 
-#scissorsOption {
+#Scissors {
     border-color: #cc48ad;
 }
 
-#scissorsOption:hover {
+#Scissors:hover {
     cursor: pointer;
     border-color: #575757;
     background-color: #cc48ad;
     box-shadow: 0 8px 12px #cc48ad;
 }
 
-#lizardOption {
+#Lizard {
     border-color: #d5e03d;
 }
 
-#lizardOption:hover {
+#Lizard:hover {
     cursor: pointer;
     border-color: #575757;
     background-color: #d5e03d;
     box-shadow: 0 8px 12px #d5e03d;
 }
 
-#spockOption {
+#Spock {
     border-color: #e99e1c;
 }
 
-#spockOption:hover {
+#Spock:hover {
     cursor: pointer;
     border-color: #575757;
     background-color: #e99e1c;
