@@ -50,6 +50,7 @@ Rock, Paper,Scissors, Lizard, Spock Game is a website for users want to play an 
 
 - __select Area__
 
+  - A drop down explains which option wins and loses against which of the other options. Players can access this information anytime to help them choose. 
   - Featured on game starting page, it includes the five options for the users (player) to choose from.
   - This section will allow the user to easily select what they want. 
 
@@ -71,7 +72,7 @@ Rock, Paper,Scissors, Lizard, Spock Game is a website for users want to play an 
         ![Colour Palette](documentation/colour-palette/colourpalette.png)
 
 -   ### Typography
-    - Google Fonts were used to import Roboto condensed and Roboto fonts into styles.css.  These were chosen as they incorporate a lot of straight thick lines which comes across as oppressive. The fonts were tested for their effectiveness by how they made the word 'terrorism' look.
+    - Google Fonts were used to import Roboto condensed, Roboto, and Kaina One fonts into styles.css.  These were chosen as they incorporate a lot of straight thick lines which comes across as oppressive. The fonts were tested for their effectiveness by how they made the word 'terrorism' look.
  
     ![Font Pairing](documentation/font-family/font-pair.png)   
 
@@ -105,6 +106,7 @@ Rock, Paper,Scissors, Lizard, Spock Game is a website for users want to play an 
 -   [Balsamiq:](https://balsamiq.com/) was used to create the wireframes during the design process.
 -   [bootstrap 5.3:](https://getbootstrap.com/) was the framework used to streamline styling classes.
 -   [favicon:](https://favicon.io/) was used for creating website logo icons.
+-   [SVG icons:](https://www.svgrepo.com/) was used for the five option icons.
     
 
 ## Testing 
