@@ -7,7 +7,7 @@ const mainGameContainer = document.getElementsByClassName('main-game-container')
 const gameOptions = document.getElementById('game-options')
 const optionTextAndSVG = document.querySelectorAll('.option-container p, .option-container path')
 const allOptions = document.getElementsByClassName('option-container')
-const availableChoices = ['rockOption', 'paperOption', 'scissorsOption', 'lizardOption', 'spockOption']
+const availableChoices = ['Rock', 'Paper', 'Scissors', 'Lizard', 'Spock']
 
 const roundEndScreen = document.getElementById('round-end-screen')
 const roundEndPlayer1 = document.getElementById('player-one-chose')
@@ -137,18 +137,22 @@ function winnerThisRound(playerOneChoice, otherPlayerChoice) {
         console.log(result)
         return result
     }
-    switch (playerOneChoice) {
-        case 'rockOption':
-            if (otherPlayerChoice === 'paperOption' || otherPlayerChoice === 'spockOption') {
-                result = 'other player'
+
+    switch (playerOneChoice){
+        case 'Rock':
+            if(otherPlayerChoice === 'Paper' || otherPlayerChoice === 'Spock'){
+
+              result = 'other player'
                 otherPlayerPoints++
             } else {
                 result = 'Player One'
                 playerOnePoints++
             }
             break;
-        case 'paperOption':
-            if (otherPlayerChoice === 'scissorsOption' || otherPlayerChoice === 'lizardOption') {
+
+        case 'Paper':
+            if(otherPlayerChoice === 'Scissors' || otherPlayerChoice === 'Lizard'){
+
                 result = 'other player'
                 otherPlayerPoints++
             } else {
@@ -165,28 +169,43 @@ function winnerThisRound(playerOneChoice, otherPlayerChoice) {
                 playerOnePoints++
             }
             break;
-        case 'lizardOption':
-            if (otherPlayerChoice === 'paperOption' || otherPlayerChoice === 'spockOption') {
-                result = 'other player'
-                otherPlayerPoints++
-            } else {
-                result = 'Player One'
-                playerOnePoints++
-            }
-            break;
-        case 'spockOption':
-            if (otherPlayerChoice === 'paperOption' || otherPlayerChoice === 'lizardOption') {
-                result = 'other player'
-                otherPlayerPoints++
-            } else {
-                result = 'Player One'
-                playerOnePoints++
-            }
-            break;
 
-        default:
-            //something must have gone wrong, count as Draw
-            result = 'Draw'
+
+            case 'Scissors':
+                if(otherPlayerChoice === 'Rock' || otherPlayerChoice === 'Spock'){
+                    result = 'other player'
+                    otherPlayerPoints++
+                }
+                else {
+                    result = 'Player One'
+                    playerOnePoints++
+                }
+            break;
+            case 'Lizard':
+                if(otherPlayerChoice === 'Paper' || otherPlayerChoice === 'Spock'){
+                    result = 'other player'
+                    otherPlayerPoints++
+                }
+                else {
+                    result = 'Player One'
+                    playerOnePoints++
+                }
+            break;
+            case 'Spock':
+                if(otherPlayerChoice === 'Paper' || otherPlayerChoice === 'Lizard'){
+                    result = 'other player'
+                    otherPlayerPoints++
+                }
+                else {
+                    result = 'Player One'
+                    playerOnePoints++
+                }
+                break;
+            
+            default:
+                //something must have gone wrong, count as Draw
+                result = 'Draw'
+
             break;
     }
 
