@@ -18,50 +18,90 @@ Rock, Paper,Scissors, Lizard, Spock Game is a website for users want to play an 
 
 -   ### User stories
 
-    -   #### Header:
-        1. In order to **  ** as a ** **, I can **  **
-   
+    -   #### Display the result to user:
+        1. In order to know if I won,lost or drew  as a user, I can see the result of the game after each round.
+        2. In order to know which round I am now at as a user, I can see the current round information.
+        3. In order to know what computer has selected as a game designer, I can see the result comparing with computer' selection.
+        4. In order to know game result after used up all the tries in one game as a user, I can see the final result after all tries in one game.
+        5. In order to know current score after each round as a user, I can see my score and the other player' score.
 
-    -   #### selectArea:
-        1. In order to **l  ** as a ** **, I can **  **
-     
+    -   #### Select option:
+        1. In order to select from one of the five options:rock, paper, scissors,lizard, spock as a user, I can choose the one I want.
+        2. In order to show the options to users as a game designer, I can display the five options to the users.
+        3. In order to capture and process the user's selection as a game designer, I can get what the user has selected.
+        4. In order to play with friend or play with computer as a user, I can choose who to play with to start the game.
 	
-    -   #### resultArea:
-        1. In order to **l  ** as a ** **, I can **  **
+    -   #### Rules:
+        1. In order to understand the rules and play the game correctly as a user, I can see the clear instruction on how to play the game before start the game.
+        2. In order to display the user the rules as a game designer, I can get user access the rules easily from the main game screen.
+        3. In order to win the game as a user, I can see how the winner determined based on the rules of the game.
+
+    -   #### Limited tries:
+        1. In order to enjoy focused challenges as a user, I can choose the limited number of tries before it ends.
+        2. In order to experience a defined game session with a clear goal and outcome as a user, I can play the game with the predefined numbers.
+        3. In order to return to home or re-start another game after last try as a user, I can be displayed the option.
+        4. In order to show users' overall performance throughout the limited attemps as a game designer, I can disply the user's final score after last try.
+
+    -   #### Score tracking:
+        1. In order to challenge during the game as a user, I can track the score across each round and see how well the performance is so far.
+        2. In order to keep track of the scores as a game designer, I can display the scores to user to show detailed picture of the user' performance.
+        3. In order to track the performance correctly as a game designer, I can implement logic to update the score based on the outcome of each round.
       
-        
 
-    -   #### scoreArea:
-        1. In order to **l  ** as a ** **, I can **  **
-   
+    -   #### Increasing difficulties:
+        1. In order to thrive on challeges as a user, I can gradually increase in difficulty as progress.
+        2. In order to continuously test and improve the skills as a user, I can try different difficulties.
+        3. In order to provide and attract more users as a game designer, I can provide different difficulty levels.
 
-    -   #### rule:
-        1. In order to **l  ** as a ** **, I can **  **
-      
-
-    -   #### footer:
-        1. In order to **l  ** as a ** **, I can **  **
-   
-
-     
+   -   #### Responsive design:
+        1. In order to get the game be accessbile and visually appealing on all devices as a site owner, I can provide responsive web pages.
+        2. In order to play in different size devices and gain better user experience as a user, I can be provided the responsive web pages.
+  
 ## Features 
 
 ### Existing Features
 
-- __select Area__
+- __rule Area__
 
   - A drop down explains which option wins and loses against which of the other options. Players can access this information anytime to help them choose. 
+  
+![select area](documentation/screenshots/xx.png)
+
+
+- __startgame Area__
+
+  - There are two options for user to choose. Either play with a friend or play with the  computer
+
+
+![select area](documentation/screenshots/xx.png)
+
+- __select Area__
+
   - Featured on game starting page, it includes the five options for the users (player) to choose from.
-  - This section will allow the user to easily select what they want. 
+  - This section will allow the user to easily select what they want.
+
+![select area](documentation/screenshots/xx.png)
+
+- __result Area__
+
+  - This section will show user the round result and the total result after last try in one game.
+
+![select area](documentation/screenshots/xx.png)
+
+- __responsive Design__
+
+  - This website is responsive to different screen sizes.
 
 ![select area](documentation/screenshots/xx.png)
 
 
 
+
 ### Features Left to Implement
 
-- Resources: external links to other organizations prevent workshops
-	- It would be helpful to allow users to find other useful workshops about prevent such as online courses.
+- Limited tries quantity to choose
+  
+- Increasing difficulty
 
   
 ## Design
