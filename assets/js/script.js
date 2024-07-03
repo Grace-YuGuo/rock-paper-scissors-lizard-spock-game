@@ -283,10 +283,12 @@ function announceRoundWinner(result) {
     currentPlayerTwoScore.innerHTML = otherPlayerPoints
 
     if (result === 'Draw') {
+
         roundWinner.innerHTML = `It's a draw round`
     } else {
         roundWinner.innerHTML = `This round winner is ` + result
     }
+
 
     roundEndScreen.style.display = 'block'
 
