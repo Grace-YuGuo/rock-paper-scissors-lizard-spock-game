@@ -211,15 +211,6 @@ function winnerThisRound(playerOneChoice, otherPlayerChoice) {
                 playerOnePoints++
             }
             break;
-        case 'scissorsOption':
-            if (otherPlayerChoice === 'Rock' || otherPlayerChoice === 'Spock') {
-                result = 'other player'
-                otherPlayerPoints++
-            } else {
-                result = 'Player One'
-                playerOnePoints++
-            }
-            break;
 
 
         case 'Scissors':
@@ -232,7 +223,7 @@ function winnerThisRound(playerOneChoice, otherPlayerChoice) {
             }
             break;
         case 'Lizard':
-            if (otherPlayerChoice === 'Paper' || otherPlayerChoice === 'Spock') {
+            if (otherPlayerChoice === 'Rock' || otherPlayerChoice === 'Scissors') {
                 result = 'other player'
                 otherPlayerPoints++
             } else {
