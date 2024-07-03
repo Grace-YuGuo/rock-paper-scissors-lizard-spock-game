@@ -107,12 +107,10 @@ Rock, Paper,Scissors, Lizard, Spock Game is a website for users want to play an 
 ## Design
 
 -   ### Colour Scheme
-    -  We agreed that a couple dark colours mixed with bright colours would work for our website. Including red was important to convey the danger of terrorism. The colours picked were generated the website [Coolors](https://coolors.co/)
-
-        ![Colour Palette](documentation/colour-palette/colourpalette.png)
+    -  Agreed a couple colors would be used for our website elements in design and planning stage.
 
 -   ### Typography
-    - Google Fonts were used to import Roboto condensed, Roboto, and Kaina One fonts into styles.css.  These were chosen as they incorporate a lot of straight thick lines which comes across as oppressive. The fonts were tested for their effectiveness by how they made the word 'terrorism' look.
+    - Google Fonts were used to import 'Keania One' fonts into styles.css.
  
     ![Font Pairing](documentation/font-family/font-pair.png)   
 
@@ -148,8 +146,7 @@ Rock, Paper,Scissors, Lizard, Spock Game is a website for users want to play an 
 -   [Font Awesome:](https://fontawesome.com/) was used to add icons for aesthetic and UX purposes.
 -   [Git:](https://git-scm.com/) was used for version control by utilising the Gitpod terminal to commit to Git and Push to GitHub.
 -   [GitHub:](https://github.com/) is used as the respository for the projects code after being pushed from Git.
--   [Balsamiq:](https://balsamiq.com/) was used to create the wireframes during the design process.
--   [bootstrap 5.3:](https://getbootstrap.com/) was the framework used to streamline styling classes.
+-   [Figma:]([https://balsamiq.com/](https://www.figma.com/design/SqZL6FhkzGXVNvs4bazSra/Rock-Paper-Scissors-Lizard-Spock?node-id=0-1&t=VgGd6XmPVwHi5XPq-0)) was used to create the wireframes during the design process.
 -   [favicon:](https://favicon.io/) was used for creating website logo icons.
 -   [SVG icons:](https://www.svgrepo.com/) was used for the five option icons.
     
@@ -166,7 +163,7 @@ Rock, Paper,Scissors, Lizard, Spock Game is a website for users want to play an 
 
 ### Unfixed Bugs
 
-- Page content keeps disappearing behind header on some screen sizes. This relates to the header being position: fixed. The content needs the margin to be adjusted.
+- Page content xxxxxxxxxxxxxxxxxxxxxxxxxx
 
 ## Deployment
 
@@ -187,12 +184,10 @@ The live link can be found here - https://xxx.html
 - The layout was influenced by the following code institute projects:
 	- [Love Running](https://github.com/Code-Institute-Solutions/love-running-v3/tree/main/8.1-testing-and-validation)
 	- [Love Rosie](https://github.com/Code-Institute-Solutions/resume-miniproject-bootstrap4/tree/master)
-- The following UK government web pages were used for all factual information:
-	- Case Study: https://www.gov.uk/government/publications/the-prevent-duty-safeguarding-learners-vulnerable-to-radicalisation/case-studies
- 	- Prevent Officers on Home Page: https://www.met.police.uk/advice/advice-and-information/t/prevent/prevent/
-  	- Prevent Terrorism on Homepage: https://www.gov.uk/government/publications/independent-review-of-prevents-report-a[…]endent-review-of-prevent-one-year-on-progress-report-accessible
-  	- Prevent School on HomePage: https://www.teachingcitizenship.org.uk/wp-content/uploads/2022/08/ACT_Prevent-and-controversial-issues-guidance_guide-1.pdf
-  	- Prevent Spotting the Signs: https://www.met.police.uk/advice/advice-and-information/t/prevent/prevent/
+- The following xxx used for all factual information:
+	- 
+ 	- 
+  
 - The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
 
 ### Media
