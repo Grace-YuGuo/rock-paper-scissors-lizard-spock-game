@@ -53,7 +53,7 @@ Rock, Paper,Scissors, Lizard, Spock Game is a website for users want to play an 
         2. In order to continuously test and improve the skills as a user, I can try different difficulties.
         3. In order to provide and attract more users as a game designer, I can provide different difficulty levels.
 
-   -   #### Responsive design:
+    -   #### Responsive design:
         1. In order to get the game be accessbile and visually appealing on all devices as a site owner, I can provide responsive web pages.
         2. In order to play in different size devices and gain better user experience as a user, I can be provided the responsive web pages.
   
