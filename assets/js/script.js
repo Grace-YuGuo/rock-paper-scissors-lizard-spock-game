@@ -113,7 +113,7 @@ function computerChooseOption() {
     let randomChoice = Math.floor(Math.random() * availableChoices.length)
     otherPlayerChoice = availableChoices[randomChoice]
     console.log(`Computer has chosen ${otherPlayerChoice}`)
-    
+
     // add and remove fake hover another time mimicComputerHovering()
 
     isPlayerOneTurn = true
@@ -121,32 +121,28 @@ function computerChooseOption() {
 }
 
 /** implemented if there is time and it looks better than the alternative : this pretends the computer is hovering over an option */
-function mimicComputerHovering(){
+function mimicComputerHovering() {
     console.log('mimicking')
     document.getElementById(otherPlayerChoice).style.borderColor = '#575757'
 
-    if (otherPlayerChoice == 'Rock'){
+    if (otherPlayerChoice == 'Rock') {
         document.getElementById(otherPlayerChoice).style.backgroundColor = '#53cf8d'
         document.getElementById(otherPlayerChoice).style.boxShadow = '0 8px 12px #53cf8d'
-    } 
-    else if (otherPlayerChoice == 'Paper'){
+    } else if (otherPlayerChoice == 'Paper') {
         document.getElementById(otherPlayerChoice).style.backgroundColor = '#3ce0ee'
         document.getElementById(otherPlayerChoice).style.boxShadow = '0 8px 12px #3ce0ee'
-    } 
-    else if (otherPlayerChoice == 'Scissors'){
+    } else if (otherPlayerChoice == 'Scissors') {
         document.getElementById(otherPlayerChoice).style.backgroundColor = '#cc48ad'
         document.getElementById(otherPlayerChoice).style.boxShadow = '0 8px 12px #cc48ad'
-    } 
-    else if (otherPlayerChoice == 'Lizard'){
+    } else if (otherPlayerChoice == 'Lizard') {
         document.getElementById(otherPlayerChoice).style.backgroundColor = '#d5e03d'
         document.getElementById(otherPlayerChoice).style.boxShadow = '0 8px 12px #d5e03d'
-    }
-    else{
+    } else {
         document.getElementById(otherPlayerChoice).style.backgroundColor = '#e99e1c'
         document.getElementById(otherPlayerChoice).style.boxShadow = '0 8px 12px #e99e1c'
     }
 }
-    
+
 
 function switchTurns() {
     if (isPlayerOneTurn && opponentIsComputer) {
@@ -158,20 +154,24 @@ function switchTurns() {
         setTimeout(computerChooseOption, 2000)
 
         //pretending the computer has clicked on one option
-        setTimeout(function(){
+        setTimeout(function () {
             gameOptions.style.display = 'none'
         }, 5000)
-        
+
     } else {
         isPlayerOneTurn = !isPlayerOneTurn
-    } 
+    }
 
-    if (!isPlayerOneTurn){
-        playersTurn.innerHTML='PLAYER 2\'S TURN'
-    }else if(roundEndScreen.style.display=='block'){
-        playersTurn.innerHTML='ROUND RESULT'
-    }else{
-        playersTurn.innerHTML='PLAYER 1\'S TURN'
+    if (!isPlayerOneTurn) {
+        if (opponentIsComputer) {
+            playersTurn.innerHTML = 'COMPUTER\'S TURN'
+        } else {
+            playersTurn.innerHTML = 'PLAYER 2\'S TURN'
+        }
+    } else if (roundEndScreen.style.display == 'block') {
+        playersTurn.innerHTML = 'ROUND RESULT'
+    } else {
+        playersTurn.innerHTML = 'PLAYER 1\'S TURN'
     }
 
 }
@@ -186,11 +186,11 @@ function winnerThisRound(playerOneChoice, otherPlayerChoice) {
         return result
     }
 
-    switch (playerOneChoice){
+    switch (playerOneChoice) {
         case 'Rock':
-            if(otherPlayerChoice === 'Paper' || otherPlayerChoice === 'Spock'){
+            if (otherPlayerChoice === 'Paper' || otherPlayerChoice === 'Spock') {
 
-              result = 'other player'
+                result = 'other player'
                 otherPlayerPoints++
             } else {
                 result = 'Player One'
@@ -199,7 +199,7 @@ function winnerThisRound(playerOneChoice, otherPlayerChoice) {
             break;
 
         case 'Paper':
-            if(otherPlayerChoice === 'Scissors' || otherPlayerChoice === 'Lizard'){
+            if (otherPlayerChoice === 'Scissors' || otherPlayerChoice === 'Lizard') {
 
                 result = 'other player'
                 otherPlayerPoints++
@@ -219,40 +219,37 @@ function winnerThisRound(playerOneChoice, otherPlayerChoice) {
             break;
 
 
-            case 'Scissors':
-                if(otherPlayerChoice === 'Rock' || otherPlayerChoice === 'Spock'){
-                    result = 'other player'
-                    otherPlayerPoints++
-                }
-                else {
-                    result = 'Player One'
-                    playerOnePoints++
-                }
+        case 'Scissors':
+            if (otherPlayerChoice === 'Rock' || otherPlayerChoice === 'Spock') {
+                result = 'other player'
+                otherPlayerPoints++
+            } else {
+                result = 'Player One'
+                playerOnePoints++
+            }
             break;
-            case 'Lizard':
-                if(otherPlayerChoice === 'Paper' || otherPlayerChoice === 'Spock'){
-                    result = 'other player'
-                    otherPlayerPoints++
-                }
-                else {
-                    result = 'Player One'
-                    playerOnePoints++
-                }
+        case 'Lizard':
+            if (otherPlayerChoice === 'Paper' || otherPlayerChoice === 'Spock') {
+                result = 'other player'
+                otherPlayerPoints++
+            } else {
+                result = 'Player One'
+                playerOnePoints++
+            }
             break;
-            case 'Spock':
-                if(otherPlayerChoice === 'Paper' || otherPlayerChoice === 'Lizard'){
-                    result = 'other player'
-                    otherPlayerPoints++
-                }
-                else {
-                    result = 'Player One'
-                    playerOnePoints++
-                }
-                break;
-            
-            default:
-                //something must have gone wrong, count as Draw
-                result = 'Draw'
+        case 'Spock':
+            if (otherPlayerChoice === 'Paper' || otherPlayerChoice === 'Lizard') {
+                result = 'other player'
+                otherPlayerPoints++
+            } else {
+                result = 'Player One'
+                playerOnePoints++
+            }
+            break;
+
+        default:
+            //something must have gone wrong, count as Draw
+            result = 'Draw'
 
             break;
     }
@@ -281,17 +278,16 @@ function announceRoundWinner(result) {
     roundEndOtherPlayer.innerHTML = `${opponentIsComputer? `COMPUTER CHOSE ${otherPlayerChoice}` : `PLAYER 2 CHOSE ${otherPlayerChoice}`}`
     currentPlayerOneScore.innerHTML = playerOnePoints
     currentPlayerTwoScore.innerHTML = otherPlayerPoints
-    roundWinner.innerHTML = result
+    roundWinner.innerHTML = `This round winner is ` +result
     roundEndScreen.style.display = 'block'
 
-    if(currentRound == 5){
+    if (currentRound == 5) {
         isGameRunning = false
     }
 
-    if(isGameRunning){
+    if (isGameRunning) {
         nextRoundButton.style.display = 'block'
-    }
-    else{
+    } else {
         newGameButton.style.display = 'block'
     }
 
@@ -303,13 +299,13 @@ nextRoundButton.addEventListener('click', function () {
     nextRoundButton.style.display = 'none'
     gameOptions.style.display = 'flex'
 
-        updateRound()
-        isPlayerOneTurn=false
-        switchTurns()
+    updateRound()
+    isPlayerOneTurn = false
+    switchTurns()
 })
 
 /** resets everything ready for a new game */
-newGameButton.addEventListener('click', function(){
+newGameButton.addEventListener('click', function () {
     roundEndScreen.style.display = 'none'
     mainGameContainer.style.display = 'none'
     newGameButton.style.display = 'none'
@@ -326,7 +322,7 @@ newGameButton.addEventListener('click', function(){
 })
 
 
-function updateRound(){
+function updateRound() {
     currentRound = currentRound + 1
     currentRoundElement.innerHTML = currentRound
 }
