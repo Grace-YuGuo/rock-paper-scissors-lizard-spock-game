@@ -110,6 +110,7 @@ function playerChooseOption(clickedButton) {
 function computerChooseOption() {
     // document.getElementById('game-options').appendChild(`<h3>test</h3>`)
     computerChoosing.style.display = 'none'
+    gameOptions.style.display = 'none'
     let randomChoice = Math.floor(Math.random() * availableChoices.length)
     otherPlayerChoice = availableChoices[randomChoice]
     console.log(`Computer has chosen ${otherPlayerChoice}`)
@@ -149,14 +150,16 @@ function switchTurns() {
         isPlayerOneTurn = false
         //showing the computer *thinking*
         computerChoosing.style.display = 'block'
-
+        gameOptions.style.display = 'none'
         //hiding the thinking option and quickly making the actual choice
-        setTimeout(computerChooseOption, 2000)
+        setTimeout(computerChooseOption, 1500)
 
         //pretending the computer has clicked on one option
-        setTimeout(function () {
-            gameOptions.style.display = 'none'
-        }, 5000)
+
+        // setTimeout(function(){
+        //     gameOptions.style.display = 'none'
+        // }, 3000)
+        
 
     } else {
         isPlayerOneTurn = !isPlayerOneTurn
@@ -280,10 +283,13 @@ function announceRoundWinner(result) {
     currentPlayerTwoScore.innerHTML = otherPlayerPoints
 
     if (result === 'Draw') {
-        roundWinner.innerHTML = `This round is draw`
+
+        roundWinner.innerHTML = `It's a draw round`
     } else {
         roundWinner.innerHTML = `This round winner is ` + result
     }
+
+
     roundEndScreen.style.display = 'block'
 
     if (currentRound == 5) {
@@ -299,14 +305,23 @@ function announceRoundWinner(result) {
 }
 
 /**handles proceeding to the next round */
-nextRoundButton.addEventListener('click', function () {
-    roundEndScreen.style.display = 'none'
-    nextRoundButton.style.display = 'none'
-    gameOptions.style.display = 'flex'
 
-    updateRound()
-    isPlayerOneTurn = false
-    switchTurns()
+nextRoundButton.addEventListener('click', 
+    
+    function () {
+        this.disabled = true
+        //giving everything time to load even if the user clicks on next round really quickly
+        setTimeout(function(){
+            roundEndScreen.style.display = 'none'
+            nextRoundButton.style.display = 'none'
+            gameOptions.style.display = 'flex'
+        
+                updateRound()
+                isPlayerOneTurn=false
+                switchTurns()
+                nextRoundButton.disabled = false
+        }, 1000)
+
 })
 
 /** resets everything ready for a new game */
