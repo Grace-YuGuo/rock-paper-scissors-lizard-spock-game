@@ -6,6 +6,7 @@ body {
     background: linear-gradient(rgba(94, 168, 193, 0.1), #8CB9C5);
     background-repeat: no-repeat;
     min-height: 100vh;
+    margin: 0;
 }
 
 h1,
@@ -15,6 +16,7 @@ h2 {
     font-style: normal;
     color: #D93312;
     text-align: center;
+    font-size: 2rem;
 }
 
 hr {
@@ -40,14 +42,12 @@ hr {
 .rules {
     border-radius: 12px;
     background-color: white;
-    padding: 12px;
+    padding: 1.5rem;
     border: 4px solid #D93312;
     position: relative;
-    display: inline-block;
-}
+    max-width: 90%; /* Adjusted max-width for better display on larger screens */
+    margin: 0 auto;
 
-.rule-heading{
-    width: 1470px;
 }
 
 .rule-dropdown {
@@ -59,8 +59,8 @@ hr {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     text-align: center;
-    margin-left: 520px;
-    width: 450px;
+    margin-left: 0;
+    width: auto;
 }
 
 .rule-dropdown p{
@@ -273,10 +273,27 @@ display: flex;
 
 /* media query for screen size min-width 768px */
 @media screen and (min-width:768px) {
+    h1,
+    h2 {
+        font-size: 3rem; /* Larger font size for larger screens */
+    }
+
+    .rules {
+        max-width: 600px; /* Adjusted max-width for better display on larg-er screens */
+        margin: 0 auto; /* Center the rules section */
+    }
+
+    .rule-dropdown {
+        min-width: 200px; /* Adjusted minimum width for better visibility */
+    }
+
     .win-lose {
         display: flex;
         flex-direction: row;
-        gap: 10%;
+        justify-content: space-between; /* Adjust as needed */
+        align-items: center;
+        gap: 2rem;
+
     }
 
     .start-game-buttons {
@@ -284,17 +301,28 @@ display: flex;
         flex-direction: row;
         justify-content: center;
         gap: 30%;
+        margin: 6rem 0;
     }
 
     .game-options {
         display: flex;
-        gap: 5%;
+        gap: 1rem;
     }
 
 }
 
 /* media query for screen size min-width 992px  */
 @media screen and (min-width:992px) {
+    .rules {
+        max-width: 800px; /* Further adjust max-width as needed */
+    }    
+
+    .rule-dropdown {
+
+        min-width: 750px;  /* Adjusted minimum width for better visibility */
+    }
+ 
+
     .win-lose {
         gap: 30%;
     }
