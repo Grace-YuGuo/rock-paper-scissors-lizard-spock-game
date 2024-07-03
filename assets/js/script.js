@@ -278,7 +278,12 @@ function announceRoundWinner(result) {
     roundEndOtherPlayer.innerHTML = `${opponentIsComputer? `COMPUTER CHOSE ${otherPlayerChoice}` : `PLAYER 2 CHOSE ${otherPlayerChoice}`}`
     currentPlayerOneScore.innerHTML = playerOnePoints
     currentPlayerTwoScore.innerHTML = otherPlayerPoints
-    roundWinner.innerHTML = `This round winner is ` +result
+
+    if (result === 'Draw') {
+        roundWinner.innerHTML = `This round is draw`
+    } else {
+        roundWinner.innerHTML = `This round winner is ` + result
+    }
     roundEndScreen.style.display = 'block'
 
     if (currentRound == 5) {
