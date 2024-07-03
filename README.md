@@ -56,7 +56,10 @@ Rock, Paper,Scissors, Lizard, Spock Game is a website for users want to play an 
     -   #### Responsive design:
         1. In order to get the game be accessbile and visually appealing on all devices as a site owner, I can provide responsive web pages.
         2. In order to play in different size devices and gain better user experience as a user, I can be provided the responsive web pages.
-  
+           
+-   ### Miro board:
+Our user stories, which guide our development process, are documented in our Miro board. You can view them [here](https://miro.com/app/board/uXjVK3cOwbY=/).
+
 ## Features 
 
 ### Existing Features
