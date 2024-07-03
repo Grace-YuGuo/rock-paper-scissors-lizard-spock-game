@@ -160,9 +160,9 @@ Rock, Paper,Scissors, Lizard, Spock Game is a website for users want to play an 
 ### Validator Testing 
 
 - HTML
-  - 4 errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarkchips.github.io%2Fprevent-awareness%2Findex.html)
+  - 4 errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/#textarea)
 - CSS
-  - 1 error was found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmarkchips.github.io%2Fprevent-awareness%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+  - No error was found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator)
 
 ### Unfixed Bugs
 
