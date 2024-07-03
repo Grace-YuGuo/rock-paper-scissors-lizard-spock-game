@@ -146,6 +146,8 @@ hr {
     background-color: white;
     padding: 12px;
     border: 4px solid #D93312;
+
+    display: none;
 }
 
 .main-game-container h3 {
@@ -188,6 +190,13 @@ hr {
     width: 40px;
     height: 40px;
 }
+
+.main-game-container .computer-choosing{
+    margin: 2rem auto;
+    display: none;
+    text-align: center;
+}
+
 
 /* add effects for hovering on the five options */
 #Rock {
@@ -267,6 +276,8 @@ display: flex;
     border:none;
     padding: 1rem 2rem;
     cursor: pointer;
+
+    display: none;
 }
 
 
