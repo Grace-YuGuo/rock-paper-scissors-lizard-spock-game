@@ -3,7 +3,7 @@
 Rock, Paper,Scissors, Lizard, Spock Game is a website for users want to play an online game that has elements of change.Provide a challenging game with options to select the limited number of tries before the game is over.
 
 
-![Responsive Mockup](documentation/screenshots/xxx.png)
+![Responsive Mockup](assets/documentation/screenshots/Screenshot1.png)
 
 ## Index – Table of Contents
 * [User Experience (UX)](#user-experience-ux) 
@@ -68,7 +68,7 @@ Our user stories, which guide our development process, are documented in our Mir
 
   - A drop down explains which option wins and loses against which of the other options. Players can access this information anytime to help them choose. 
   
-![select area](documentation/screenshots/xx.png)
+![rule area](assets/documentation/screenshots/Screenshot2.png)
 
 
 - __startgame Area__
@@ -76,26 +76,26 @@ Our user stories, which guide our development process, are documented in our Mir
   - There are two options for user to choose. Either play with a friend or play with the  computer
 
 
-![select area](documentation/screenshots/xx.png)
+![startgame area](assets/documentation/screenshots/Screenshot3.png)
 
 - __select Area__
 
   - Featured on game starting page, it includes the five options for the users (player) to choose from.
   - This section will allow the user to easily select what they want.
 
-![select area](documentation/screenshots/xx.png)
+![select area](assets/documentation/screenshots/Screenshot4.png)
 
 - __result Area__
 
-  - This section will show user the round result and the total result after last try in one game.
+  - This section will show user the round result and the total result after each try in one game.
 
-![select area](documentation/screenshots/xx.png)
+![result area](assets/documentation/screenshots/Screenshot6.png)
 
 - __responsive Design__
 
   - This website is responsive to different screen sizes.
 
-![select area](documentation/screenshots/xx.png)
+![responsive design](assets/documentation/screenshots/Screenshot1.png)
 
 
 
@@ -114,8 +114,6 @@ Our user stories, which guide our development process, are documented in our Mir
 
 -   ### Typography
     - Google Fonts were used to import 'Keania One' fonts into styles.css.
- 
-    ![Font Pairing](documentation/font-family/font-pair.png)   
 
 -   ### Logo/Icon
     - The logo design incorporates the rock paper and scissors in a round.  The logo was generated using [favicon-converter](https://favicon.io/favicon-converter/)
@@ -177,21 +175,18 @@ Our user stories, which guide our development process, are documented in our Mir
   - Click save, and then wait for the deployment to be generated
   - Click visit site button at top of settings
 
-The live link can be found here - https://xxx.html
+The live link can be found here - (https://grace-yuguo.github.io/rock-paper-scissors-lizard-spock-game/)
 
 
 ## Credits 
 
 ### Content 
 
-- The layout was influenced by the following code institute projects:
-	- [Love Running](https://github.com/Code-Institute-Solutions/love-running-v3/tree/main/8.1-testing-and-validation)
-	- [Love Rosie](https://github.com/Code-Institute-Solutions/resume-miniproject-bootstrap4/tree/master)
-- The following xxx used for all factual information:
-	- 
- 	- 
-  
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+- The layout etc.
+	- [xxx] xxx
+	- [xxx] xxx
+
+
 
 ### Media
 
@@ -200,6 +195,3 @@ The live link can be found here - https://xxx.html
 
 - Images were sourced from www.freepik.com, and taken from the following web pages:
 	- https://www.freepik.com/icon/rock-paper-scissors_683187
-
-
-[def]: assets/documentation/wireframes/wireframe3.png
