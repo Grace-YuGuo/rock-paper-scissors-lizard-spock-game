@@ -146,7 +146,7 @@ Rock, Paper,Scissors, Lizard, Spock Game is a website for users want to play an 
 -   [Font Awesome:](https://fontawesome.com/) was used to add icons for aesthetic and UX purposes.
 -   [Git:](https://git-scm.com/) was used for version control by utilising the Gitpod terminal to commit to Git and Push to GitHub.
 -   [GitHub:](https://github.com/) is used as the respository for the projects code after being pushed from Git.
--   [Figma:]([https://balsamiq.com/](https://www.figma.com/design/SqZL6FhkzGXVNvs4bazSra/Rock-Paper-Scissors-Lizard-Spock?node-id=0-1&t=VgGd6XmPVwHi5XPq-0)) was used to create the wireframes during the design process.
+-   [Figma:](https://www.figma.com/design/SqZL6FhkzGXVNvs4bazSra/Rock-Paper-Scissors-Lizard-Spock?node-id=0-1&t=VgGd6XmPVwHi5XPq-0)) was used to create the wireframes during the design process.
 -   [favicon:](https://favicon.io/) was used for creating website logo icons.
 -   [SVG icons:](https://www.svgrepo.com/) was used for the five option icons.
     
