@@ -133,7 +133,7 @@
             </div>
         </div>
         <!-- section-start game buttons -->
-        <div class="start-game-buttons">
+        <div class="start-game-buttons" id="start-game-buttons">
             <button type="button" id="play-against-friend">
                 Play against a friend
             </button>
@@ -160,8 +160,10 @@
             </div>
 
             <hr>
+            <h3 id="computer-choosing" class="computer-choosing">Computer choosing ...</h3>
             <!-- game-options-area -->
             <div class="game-options" id="game-options">
+                
                 <!-- option one -->
                 <div class="option-container" id="Rock">
                     <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 512 512">
@@ -225,7 +227,8 @@
                     <h1 id="announce-round-winner">
                         Winner
                     </h1>
-                    <button id="next-round">Next round ></button>
+                    <button class="new-round" id="next-round">Next round ></button>
+                    <button class="new-game" id="new-game">New game ></button>
                 </div>
             </div>
 

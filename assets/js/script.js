@@ -7,12 +7,14 @@ const mainGameContainer = document.getElementsByClassName('main-game-container')
 const gameOptions = document.getElementById('game-options')
 const optionTextAndSVG = document.querySelectorAll('.option-container p, .option-container path')
 const allOptions = document.getElementsByClassName('option-container')
+const computerChoosing = document.getElementById('computer-choosing')
 const availableChoices = ['Rock', 'Paper', 'Scissors', 'Lizard', 'Spock']
 
 const roundEndScreen = document.getElementById('round-end-screen')
 const roundEndPlayer1 = document.getElementById('player-one-chose')
 const roundEndOtherPlayer = document.getElementById('other-player-chose')
 const nextRoundButton = document.getElementById('next-round')
+const newGameButton = document.getElementById('new-game')
 const currentRoundElement = document.getElementById('currentRound')
 const roundWinner = document.getElementById('announce-round-winner')
 
@@ -55,8 +57,10 @@ playAgainstComputer.addEventListener('click', function (e) {
 
 function startGame() {
     isGameRunning = true
+    updateRound()
     startGameButtons.style.display = 'none'
     mainGameContainer.style.display = 'block'
+    gameOptions.style.display = 'flex'
     mainGameContainer.style.margin = '30px'
     console.log(isGameRunning)
     isPlayerOneTurn = true
@@ -102,18 +106,62 @@ function playerChooseOption(clickedButton) {
     switchTurns()
 }
 
+/**the computer chooses an option at random */
 function computerChooseOption() {
+    // document.getElementById('game-options').appendChild(`<h3>test</h3>`)
+    computerChoosing.style.display = 'none'
     let randomChoice = Math.floor(Math.random() * availableChoices.length)
     otherPlayerChoice = availableChoices[randomChoice]
     console.log(`Computer has chosen ${otherPlayerChoice}`)
+    
+    // add and remove fake hover another time mimicComputerHovering()
+
     isPlayerOneTurn = true
     announceRoundWinner(winnerThisRound(playerOneChoice, otherPlayerChoice))
 }
 
+/** implemented if there is time and it looks better than the alternative : this pretends the computer is hovering over an option */
+function mimicComputerHovering(){
+    console.log('mimicking')
+    document.getElementById(otherPlayerChoice).style.borderColor = '#575757'
+
+    if (otherPlayerChoice == 'Rock'){
+        document.getElementById(otherPlayerChoice).style.backgroundColor = '#53cf8d'
+        document.getElementById(otherPlayerChoice).style.boxShadow = '0 8px 12px #53cf8d'
+    } 
+    else if (otherPlayerChoice == 'Paper'){
+        document.getElementById(otherPlayerChoice).style.backgroundColor = '#3ce0ee'
+        document.getElementById(otherPlayerChoice).style.boxShadow = '0 8px 12px #3ce0ee'
+    } 
+    else if (otherPlayerChoice == 'Scissors'){
+        document.getElementById(otherPlayerChoice).style.backgroundColor = '#cc48ad'
+        document.getElementById(otherPlayerChoice).style.boxShadow = '0 8px 12px #cc48ad'
+    } 
+    else if (otherPlayerChoice == 'Lizard'){
+        document.getElementById(otherPlayerChoice).style.backgroundColor = '#d5e03d'
+        document.getElementById(otherPlayerChoice).style.boxShadow = '0 8px 12px #d5e03d'
+    }
+    else{
+        document.getElementById(otherPlayerChoice).style.backgroundColor = '#e99e1c'
+        document.getElementById(otherPlayerChoice).style.boxShadow = '0 8px 12px #e99e1c'
+    }
+}
+    
+
 function switchTurns() {
     if (isPlayerOneTurn && opponentIsComputer) {
         isPlayerOneTurn = false
-        computerChooseOption()
+        //showing the computer *thinking*
+        computerChoosing.style.display = 'block'
+
+        //hiding the thinking option and quickly making the actual choice
+        setTimeout(computerChooseOption, 2000)
+
+        //pretending the computer has clicked on one option
+        setTimeout(function(){
+            gameOptions.style.display = 'none'
+        }, 5000)
+        
     } else {
         isPlayerOneTurn = !isPlayerOneTurn
     } 
@@ -161,7 +209,7 @@ function winnerThisRound(playerOneChoice, otherPlayerChoice) {
             }
             break;
         case 'scissorsOption':
-            if (otherPlayerChoice === 'rockOption' || otherPlayerChoice === 'spockOption') {
+            if (otherPlayerChoice === 'Rock' || otherPlayerChoice === 'Spock') {
                 result = 'other player'
                 otherPlayerPoints++
             } else {
@@ -227,7 +275,6 @@ function winnerThisRound(playerOneChoice, otherPlayerChoice) {
  * and announce the current turns winner before offering to proceed to next round */
 
 function announceRoundWinner(result) {
-    console.log('announceRoundWinner called')
 
     gameOptions.style.display = 'none'
     roundEndPlayer1.innerHTML = `PLAYER 1 CHOSE ${playerOneChoice}`
@@ -237,18 +284,49 @@ function announceRoundWinner(result) {
     roundWinner.innerHTML = result
     roundEndScreen.style.display = 'block'
 
-    
+    if(currentRound == 5){
+        isGameRunning = false
+    }
 
-    nextRoundButton.addEventListener('click', function () {
-        roundEndScreen.style.display = 'none'
-        gameOptions.style.display = 'flex'
+    if(isGameRunning){
+        nextRoundButton.style.display = 'block'
+    }
+    else{
+        newGameButton.style.display = 'block'
+    }
 
-        //show that we are now in the next round
-        currentRound++
-        console.log(currentRound)
-        currentRoundElement.innerHTML = currentRound
+}
+
+/**handles proceeding to the next round */
+nextRoundButton.addEventListener('click', function () {
+    roundEndScreen.style.display = 'none'
+    nextRoundButton.style.display = 'none'
+    gameOptions.style.display = 'flex'
+
+        updateRound()
         isPlayerOneTurn=false
         switchTurns()
-    })
+})
 
+/** resets everything ready for a new game */
+newGameButton.addEventListener('click', function(){
+    roundEndScreen.style.display = 'none'
+    mainGameContainer.style.display = 'none'
+    newGameButton.style.display = 'none'
+    currentRound = 0
+    playerOnePoints = 0
+    otherPlayerPoints = 0
+    currentPlayerOneScore.innerHTML = playerOnePoints
+    currentPlayerTwoScore.innerHTML = otherPlayerPoints
+    opponentIsComputer = undefined
+    isPlayerOneTurn = undefined
+    playerOneChoice = ''
+    otherPlayerChoice = ''
+    startGameButtons.style.display = 'flex'
+})
+
+
+function updateRound(){
+    currentRound = currentRound + 1
+    currentRoundElement.innerHTML = currentRound
 }
