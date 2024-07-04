@@ -183,12 +183,14 @@ The live link can be found here - (https://grace-yuguo.github.io/rock-paper-scis
 ## Credits 
 
 - Code Institute [16-week courses](https://learn.codeinstitute.net/ci_program/fsbootcamp231121)
+- W3Schools [W3Schools](https://www.w3schools.com/)
+
 
 
 
 ### Media
 
-- The icons were taken from [Font Awesome](https://fontawesome.com/)
+- The icons were taken from [Font Awesome](https://fontawesome.com/) and from [SVGrepo](https://www.svgrepo.com)
 - The fonts used were imported from [Google Fonts](https://fonts.google.com/)
 
 - Images were sourced from www.freepik.com, and taken from the following web pages:
