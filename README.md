@@ -160,11 +160,13 @@ Our user stories, which guide our development process, are documented in our Mir
 - HTML
   - 4 errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/#textarea)
 - CSS
-  - No error was found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator)
+  - No error was found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/)
+- JS
+- - 2 erros found when passing through the official [ JSHint](https://ci-jshint.herokuapp.com/)
 
 ### Unfixed Bugs
 
-- Page content xxxxxxxxxxxxxxxxxxxxxxxxxx
+- There is no major unfixed bug remain as unfixed so far. Will be further testing any underline bugs.
 
 ## Deployment
 
@@ -185,6 +187,8 @@ The live link can be found here - (https://grace-yuguo.github.io/rock-paper-scis
 - The layout etc.
 	- [xxx] xxx
 	- [xxx] xxx
+
+- Code Institute [16-week courses](https://learn.codeinstitute.net/ci_program/fsbootcamp231121)
 
 
 
