@@ -189,7 +189,7 @@ function updatePlayersTurn() {
             playersTurn.innerHTML = 'PLAYER 2\'S TURN'
         }
     } else if (roundEndScreen.style.display == 'block') {
-        playersTurn.innerHTML = 'ROUND RESULT'
+        playersTurn.innerHTML = `ROUND ${currentRound} RESULT`
     } else {
         playersTurn.innerHTML = 'PLAYER 1\'S TURN'
     }
