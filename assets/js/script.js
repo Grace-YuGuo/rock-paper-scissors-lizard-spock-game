@@ -82,6 +82,7 @@ function hookUpEventListeners() {
     //grabbing the buttons themselves
     for (let i = 0; i < allOptions.length; i++) {
         allOptions[i].addEventListener('click', function (e) {
+            e.stopPropagation()
             playerChooseOption(e.currentTarget.id)
         })
     }
@@ -159,7 +160,7 @@ function switchTurns() {
         // setTimeout(function(){
         //     gameOptions.style.display = 'none'
         // }, 3000)
-        
+
 
     } else {
         isPlayerOneTurn = !isPlayerOneTurn
@@ -297,39 +298,41 @@ function announceRoundWinner(result) {
 
 /**handles proceeding to the next round */
 
-nextRoundButton.addEventListener('click', 
-    
+nextRoundButton.addEventListener('click',
+
     function () {
         this.disabled = true
         //giving everything time to load even if the user clicks on next round really quickly
-        setTimeout(function(){
+        setTimeout(function () {
             roundEndScreen.style.display = 'none'
             nextRoundButton.style.display = 'none'
             gameOptions.style.display = 'flex'
-        
-                updateRound()
-                isPlayerOneTurn=false
-                switchTurns()
-                nextRoundButton.disabled = false
+
+            updateRound()
+            isPlayerOneTurn = false
+            switchTurns()
+            nextRoundButton.disabled = false
         }, 1000)
 
-})
+    })
 
 /** resets everything ready for a new game */
 newGameButton.addEventListener('click', function () {
-    roundEndScreen.style.display = 'none'
-    mainGameContainer.style.display = 'none'
-    newGameButton.style.display = 'none'
-    currentRound = 0
-    playerOnePoints = 0
-    otherPlayerPoints = 0
-    currentPlayerOneScore.innerHTML = playerOnePoints
-    currentPlayerTwoScore.innerHTML = otherPlayerPoints
-    opponentIsComputer = undefined
-    isPlayerOneTurn = undefined
-    playerOneChoice = ''
-    otherPlayerChoice = ''
-    startGameButtons.style.display = 'flex'
+    location.reload
+    // roundEndScreen.style.display = 'none'
+    // mainGameContainer.style.display = 'none'
+    // newGameButton.style.display = 'none'
+    // currentRound = 0
+    // playerOnePoints = 0
+    // otherPlayerPoints = 0
+    // currentPlayerOneScore.innerHTML = playerOnePoints
+    // currentPlayerTwoScore.innerHTML = otherPlayerPoints
+    // opponentIsComputer = undefined
+    // isPlayerOneTurn = undefined
+    // playerOneChoice = ''
+    // otherPlayerChoice = ''
+    // startGameButtons.style.display = 'flex'
+
 })
 
 
