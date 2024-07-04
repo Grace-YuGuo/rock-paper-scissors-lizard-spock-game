@@ -120,6 +120,7 @@ function computerChooseOption() {
 
     isPlayerOneTurn = true
     announceRoundWinner(winnerThisRound(playerOneChoice, otherPlayerChoice))
+    updatePlayersTurn();
 }
 
 /** implemented if there is time and it looks better than the alternative : this pretends the computer is hovering over an option */
@@ -166,6 +167,21 @@ function switchTurns() {
         isPlayerOneTurn = !isPlayerOneTurn
     }
 
+    updatePlayersTurn();
+    // if (!isPlayerOneTurn) {
+    //     if (opponentIsComputer) {
+    //         playersTurn.innerHTML = 'COMPUTER\'S TURN'
+    //     } else {
+    //         playersTurn.innerHTML = 'PLAYER 2\'S TURN'
+    //     }
+    // } else if (roundEndScreen.style.display == 'block') {
+    //     playersTurn.innerHTML = 'ROUND RESULT'
+    // } else {
+    //     playersTurn.innerHTML = 'PLAYER 1\'S TURN'
+    // }
+}
+
+function updatePlayersTurn() {
     if (!isPlayerOneTurn) {
         if (opponentIsComputer) {
             playersTurn.innerHTML = 'COMPUTER\'S TURN'
@@ -177,8 +193,8 @@ function switchTurns() {
     } else {
         playersTurn.innerHTML = 'PLAYER 1\'S TURN'
     }
-
 }
+
 /** checks winner for one round. returns 'player one', 'other player', or 'Draw'  */
 function winnerThisRound(playerOneChoice, otherPlayerChoice) {
     console.log(`calling with ${playerOneChoice} and ${otherPlayerChoice}`)
@@ -318,7 +334,7 @@ nextRoundButton.addEventListener('click',
 
 /** resets everything ready for a new game */
 newGameButton.addEventListener('click', function () {
-     window.location.reload();
+    window.location.reload();
     // roundEndScreen.style.display = 'none'
     // mainGameContainer.style.display = 'none'
     // newGameButton.style.display = 'none'
