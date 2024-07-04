@@ -318,7 +318,7 @@ nextRoundButton.addEventListener('click',
 
 /** resets everything ready for a new game */
 newGameButton.addEventListener('click', function () {
-    location.reload
+     window.location.reload();
     // roundEndScreen.style.display = 'none'
     // mainGameContainer.style.display = 'none'
     // newGameButton.style.display = 'none'
