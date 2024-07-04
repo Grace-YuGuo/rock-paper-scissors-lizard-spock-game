@@ -286,6 +286,13 @@ function announceRoundWinner(result) {
 
     if (currentRound == 5) {
         isGameRunning = false
+        if(playerOnePoints > otherPlayerPoints){
+            roundWinner.innerHTML=`<p>Last round of the game. Last round winnder is ${result}</p> <p style="color: black;">The game winner is PLAYER1 with score ${playerOnePoints} against ${otherPlayerPoints}</p>`
+        }else if(playerOnePoints==otherPlayerPoints){
+            roundWinner.innerHTML=`<p>This is last round of the game. The round winnder is ${result}</p> <p style="color: black;">The game is DRAW with score ${playerOnePoints} against ${otherPlayerPoints}</p>`
+        }else{
+            roundWinner.innerHTML=`<p>This is last round of the game. The round winnder is ${result}</p> <p style="color: black;">The game winner is PLAYER2 with score ${otherPlayerPoints} against ${playerOnePoints} </p>`
+        }
     }
 
     if (isGameRunning) {
