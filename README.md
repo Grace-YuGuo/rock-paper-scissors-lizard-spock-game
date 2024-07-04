@@ -182,12 +182,6 @@ The live link can be found here - (https://grace-yuguo.github.io/rock-paper-scis
 
 ## Credits 
 
-### Content 
-
-- The layout etc.
-	- [xxx] xxx
-	- [xxx] xxx
-
 - Code Institute [16-week courses](https://learn.codeinstitute.net/ci_program/fsbootcamp231121)
 
 
