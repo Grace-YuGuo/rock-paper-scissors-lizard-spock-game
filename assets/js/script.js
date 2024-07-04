@@ -156,29 +156,13 @@ function switchTurns() {
         //hiding the thinking option and quickly making the actual choice
         setTimeout(computerChooseOption, 1500)
 
-        //pretending the computer has clicked on one option
-
-        // setTimeout(function(){
-        //     gameOptions.style.display = 'none'
-        // }, 3000)
-
 
     } else {
         isPlayerOneTurn = !isPlayerOneTurn
     }
 
     updatePlayersTurn();
-    // if (!isPlayerOneTurn) {
-    //     if (opponentIsComputer) {
-    //         playersTurn.innerHTML = 'COMPUTER\'S TURN'
-    //     } else {
-    //         playersTurn.innerHTML = 'PLAYER 2\'S TURN'
-    //     }
-    // } else if (roundEndScreen.style.display == 'block') {
-    //     playersTurn.innerHTML = 'ROUND RESULT'
-    // } else {
-    //     playersTurn.innerHTML = 'PLAYER 1\'S TURN'
-    // }
+
 }
 
 function updatePlayersTurn() {
@@ -335,19 +319,6 @@ nextRoundButton.addEventListener('click',
 /** resets everything ready for a new game */
 newGameButton.addEventListener('click', function () {
     window.location.reload();
-    // roundEndScreen.style.display = 'none'
-    // mainGameContainer.style.display = 'none'
-    // newGameButton.style.display = 'none'
-    // currentRound = 0
-    // playerOnePoints = 0
-    // otherPlayerPoints = 0
-    // currentPlayerOneScore.innerHTML = playerOnePoints
-    // currentPlayerTwoScore.innerHTML = otherPlayerPoints
-    // opponentIsComputer = undefined
-    // isPlayerOneTurn = undefined
-    // playerOneChoice = ''
-    // otherPlayerChoice = ''
-    // startGameButtons.style.display = 'flex'
 
 })
 
